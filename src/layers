@@ -1,0 +1,10 @@
+WorkflowRequest -> Resource -> WorkflowMeta -> Service -> WorkflowRow -> Dao -> Record inserted in database.
+
+
+db -> Dao -> WorkflowRow -> Service -> Workflow -> Resource -> WorkflowResponse.
+ select workspaces.current_owner,workspaces.name,workspaces.description,workspace_ownerships.owner_uuid workspace_ownerships.workspace_uuid from workspace_ownerships join workspaces on workspace_ownerships.workspace_uuid=workspaces.uuid;
+
+postgres=>  select workspaces.name,workspaces.description,workspace_ownerships.owner_uuid from workspace_ownerships join workspaces on workspace_ownerships.workspace_uuid=workspaces.uuid;
+
+ select * from workspace_ownerships join workspaces on workspace_ownerships.workspace_uuid=workspaces.uuid;
+
